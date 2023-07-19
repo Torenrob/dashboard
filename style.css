@@ -1,0 +1,161 @@
+body {
+	display: grid;
+	height: 100vh;
+	grid-template-columns: 1fr 4fr;
+	grid-template-areas: "leftPanel rightPanel";
+	padding-left: 1.25%;
+	padding-bottom: 1.25%;
+	margin-left: 12.5%;
+	margin-right: 12.5%;
+	background-color: rgb(44, 44, 44);
+}
+
+#leftPanel {
+	grid-area: leftPanel;
+	display: flex;
+	flex-direction: column;
+	color: white;
+	padding-top: 20px;
+	background-color: rgb(57, 154, 233);
+}
+
+img {
+	height: 25px;
+	width: 25px;
+}
+
+#leftPanel a {
+	text-decoration: none;
+	color: white;
+	font-weight: bold;
+}
+
+#leftPanel > div {
+	display: flex;
+}
+
+#rightPanel {
+	grid-area: rightPanel;
+	background-color: rgb(235, 228, 228);
+	height: 100vh;
+}
+
+#topUserPanel {
+	grid-area: topUserPanel;
+	background-color: white;
+	padding-top: 10px;
+}
+
+#searchPanel {
+	display: flex;
+	align-items: center;
+	margin-bottom: 20px;
+	margin-left: 35px;
+}
+
+#search {
+	width: 100%;
+}
+
+#rightTopPanel {
+	display: flex;
+	justify-content: end;
+	margin-right: 80px;
+	width: 100%;
+	align-items: center;
+}
+
+#userPanelNewUpShare,
+#userPanelNewUpShare > div {
+	display: flex;
+}
+
+#projAnnPanel {
+	grid-area: projectAnnPanel;
+	max-height: 100%;
+	display: grid;
+	grid-template-columns: 6fr 2fr;
+	grid-template-areas: "projPanel annTrendPanel";
+	padding-left: 0.75%;
+	padding-right: 1%;
+	padding-top: 1%;
+}
+
+#projPanel {
+	grid-area: projPanel;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 0.25fr 3fr 3fr 3fr;
+	grid-template-areas:
+		"projPanelTitle ."
+		"pB1 pB2"
+		"pB3 pB4"
+		"pB5 pB6";
+}
+
+#projPanel > span {
+	grid-area: projPanelTitle;
+}
+
+#projPanel > div {
+	background-color: white;
+	margin: 10px;
+	border-radius: 10px;
+	box-shadow: 2.5px 2.5px 10px rgba(141, 141, 141, 0.61);
+	padding: 8%;
+}
+
+#projectBox1 {
+	grid-area: pB1;
+}
+
+#projectBox2 {
+	grid-area: pB2;
+}
+
+#projectBox3 {
+	grid-area: pB3;
+}
+
+#projectBox4 {
+	grid-area: pB4;
+}
+
+#projectBox5 {
+	grid-area: pB5;
+}
+
+#projectBox6 {
+	grid-area: pB6;
+}
+
+#annTrendPanel {
+	grid-area: annTrendPanel;
+}
+
+#annTrendPanel > div > div {
+	background-color: white;
+	margin: 10px;
+	border-radius: 10px;
+	padding: 10%;
+}
+
+#annTrendPanel p {
+	font-size: 12px;
+}
+
+#trendingPanel > div > div {
+	display: flex;
+}
+
+.btn-primary {
+	border-radius: 20px;
+}
+
+.form-control {
+	background-color: rgb(235, 228, 228);
+	border-radius: 20px;
+	display: inline;
+	width: auto;
+	padding: 0;
+}
