@@ -15,7 +15,10 @@ body {
 	display: flex;
 	flex-direction: column;
 	color: white;
-	padding-top: 20px;
+	padding-top: 0px;
+	padding-bottom: 300px;
+	padding-left: 7%;
+	justify-content: space-around;
 	background-color: rgb(57, 154, 233);
 }
 
@@ -24,14 +27,34 @@ img {
 	width: 25px;
 }
 
+#leftPanel img + * {
+	padding-left: 15px;
+}
+
 #leftPanel a {
+	display: flex;
+	align-items: center;
 	text-decoration: none;
 	color: white;
 	font-weight: bold;
 }
 
-#leftPanel > div {
+#leftPanel > div > div {
 	display: flex;
+}
+
+#mainNav {
+	display: flex;
+	flex-direction: column;
+	height: 250px;
+	justify-content: space-between;
+}
+
+#settingsNav {
+	display: flex;
+	flex-direction: column;
+	height: 150px;
+	justify-content: space-between;
 }
 
 #rightPanel {
@@ -65,9 +88,23 @@ img {
 	align-items: center;
 }
 
+#userPanelNewUpShare {
+	justify-content: space-between;
+	padding-left: 3%;
+	padding-bottom: 1%;
+}
+
+#newUpSharebtn {
+	display: flex;
+	justify-content: space-between;
+	padding-right: 7%;
+	width: 40%;
+}
+
 #userPanelNewUpShare,
 #userPanelNewUpShare > div {
 	display: flex;
+	align-items: center;
 }
 
 #projAnnPanel {
@@ -78,7 +115,7 @@ img {
 	grid-template-areas: "projPanel annTrendPanel";
 	padding-left: 0.75%;
 	padding-right: 1%;
-	padding-top: 1%;
+	padding-top: 2%;
 }
 
 #projPanel {
@@ -97,12 +134,10 @@ img {
 	grid-area: projPanelTitle;
 }
 
+#announceBox,
+#trendingBox,
 #projPanel > div {
-	background-color: white;
-	margin: 10px;
-	border-radius: 10px;
-	box-shadow: 2.5px 2.5px 10px rgba(141, 141, 141, 0.61);
-	padding: 8%;
+	box-shadow: 2.5px 2.5px 10px rgba(141, 141, 141, 0.411);
 }
 
 #projectBox1 {
@@ -129,6 +164,29 @@ img {
 	grid-area: pB6;
 }
 
+div[id^="projectBox"] {
+	background-color: white;
+	margin: 10px;
+	border-radius: 10px;
+	padding: 8%;
+	padding-left: 10%;
+	padding-right: 10%;
+	display: flex;
+	flex-direction: column;
+	border-left: solid 10px rgb(255, 153, 0);
+}
+
+div[id^="pBox"] {
+	align-self: flex-end;
+	display: flex;
+	justify-content: space-around;
+	width: 50%;
+	padding-top: 4%;
+	position: relative;
+	top: 12.5px;
+	left: 10px;
+}
+
 #annTrendPanel {
 	grid-area: annTrendPanel;
 }
@@ -140,16 +198,30 @@ img {
 	padding: 10%;
 }
 
+#announceBox span {
+	font-weight: bold;
+}
+
 #annTrendPanel p {
 	font-size: 12px;
 }
 
 #trendingPanel > div > div {
 	display: flex;
+	align-items: center;
+}
+
+#trendingPanel > div > div ~ div {
+	padding-top: 15px;
+}
+
+#trendingPanel > div > div > div {
+	padding-left: 15px;
 }
 
 .btn-primary {
 	border-radius: 20px;
+	width: 100px;
 }
 
 .form-control {

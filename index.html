@@ -16,49 +16,53 @@
 
    <body>
       <div id="leftPanel">
-         <div>
+         <div style="display: flex; align-items: center;" id="dashIcon">
             <img style="height: 50px; width: 50px;" src="images/svgIcons/view-dashboard.svg">
             <h2>Dashboard</h2>
          </div>
-         <div>
-            <img src="images/svgIcons/home.svg">
-            <a href="">Home</a>
+         <div id="mainNav">
+            <div>
+               <img src="images/svgIcons/home.svg">
+               <a href="">Home</a>
+            </div>
+            <div>
+               <img src="images/svgIcons/account-box.svg">
+               <a href="">Profile</a>
+            </div>
+            <div>
+               <img src="images/svgIcons/message.svg">
+               <a href="">Messages</a>
+            </div>
+            <div>
+               <img src="images/svgIcons/history.svg">
+               <a href="">History</a>
+            </div>
+            <div>
+               <img src="images/svgIcons/file-document-multiple.svg">
+               <a href="">Tasks</a>
+            </div>
+            <div>
+               <img src="images/svgIcons/account-group.svg">
+               <a href="">Communities</a>
+            </div>
          </div>
-         <div>
-            <img src="images/svgIcons/account-box.svg">
-            <a href="">Profile</a>
-         </div>
-         <div>
-            <img src="images/svgIcons/message.svg">
-            <a href="">Messages</a>
-         </div>
-         <div>
-            <img src="images/svgIcons/history.svg">
-            <a href="">History</a>
-         </div>
-         <div>
-            <img src="images/svgIcons/file-document-multiple.svg">
-            <a href="">Tasks</a>
-         </div>
-         <div>
-            <img src="images/svgIcons/account-group.svg">
-            <a href="">Communities
-         </div></a>
-         <div>
-            <img src="images/svgIcons/cog.svg">
-            <a href="">Settings</a>
-         </div>
-         <div>
-            <img src="images/svgIcons/help-box.svg">
-            <a href="">Support</a>
-         </div>
-         <div>
-            <img src="images/svgIcons/shield-check.svg">
-            <a href="">Privacy</a>
+         <div id="settingsNav">
+            <div>
+               <img src="images/svgIcons/cog.svg">
+               <a href="">Settings</a>
+            </div>
+            <div>
+               <img src="images/svgIcons/help-box.svg">
+               <a href="">Support</a>
+            </div>
+            <div>
+               <img src="images/svgIcons/shield-check.svg">
+               <a href="">Privacy</a>
+            </div>
          </div>
       </div>
-      <div id="rightPanel">
-         <div id="topUserPanel">
+      <div style="box-shadow: -5px 0px 10px rgba(141, 141, 141, 0.411);" id="rightPanel">
+         <div style="box-shadow: 0px 2.5px 10px rgba(141, 141, 141, 0.411);" id="topUserPanel">
             <div id="searchPanel">
                <img style="margin-right: 20px;" src="images/svgIcons/magnify.svg">
                <input class="form-control" type="text" name="search" id="search">
@@ -70,21 +74,24 @@
                </div>
             </div>
             <div id="userPanelNewUpShare">
-               <img style="height: 60px; width: 60px;" src="images/svgIcons/19706482351678699951.svg">
                <div>
-                  <span>Hi, There</span>
-                  <span>Toren Robinson (@toren)</span>
-                  <div id="newUpSharebtn">
-                     <button class="btn btn-primary" href="">New</button>
-                     <button class="btn btn-primary" href="">Upload</button>
-                     <button class="btn btn-primary" href="">Share</button>
+                  <img style="height: 60px; width: 60px;" src="images/svgIcons/19706482351678699951.svg">
+                  <div
+                     style="display: flex; flex-direction: column; position: relative; left: 15px; font-weight: bold;">
+                     <span style="padding-bottom: 10px; font-size: 14px;">Hi there,</span>
+                     <span style="font-size: 20px;">Toren Robinson (@toren)</span>
                   </div>
+               </div>
+               <div id="newUpSharebtn">
+                  <button class="btn btn-primary" href="">New</button>
+                  <button class="btn btn-primary" href="">Upload</button>
+                  <button class="btn btn-primary" href="">Share</button>
                </div>
             </div>
          </div>
          <div id="projAnnPanel">
             <div id="projPanel">
-               <h5>Your Projects</h5>
+               <h5 style="padding-left: 3%;">Your Projects</h5>
                <div id="projectBox1">
                   <h6>Super Cool Project</h6>
                   <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui quidem ipsam quo laboriosam,
@@ -92,9 +99,11 @@
                      at tempora enim natus magnam, perspiciatis possimus excepturi illum earum veritatis pariatur
                      quia
                      nihil exercitationem repellat.</p>
-                  <img src="images/svgIcons/star-plus.svg">
-                  <img src="images/svgIcons/eye-plus-outline.svg">
-                  <img src="images/svgIcons/source-merge.svg">
+                  <div id="pBoxIcons1">
+                     <img src="images/svgIcons/star-plus.svg">
+                     <img src="images/svgIcons/eye-plus-outline.svg">
+                     <img src="images/svgIcons/source-merge.svg">
+                  </div>
                </div>
                <div id="projectBox2">
                   <h6>Super Cool Project</h6>
@@ -103,9 +112,11 @@
                      at tempora enim natus magnam, perspiciatis possimus excepturi illum earum veritatis pariatur
                      quia
                      nihil exercitationem repellat.</p>
-                  <img src="images/svgIcons/star-plus.svg">
-                  <img src="images/svgIcons/eye-plus-outline.svg">
-                  <img src="images/svgIcons/source-merge.svg">
+                  <div id="pBoxIcons2">
+                     <img src="images/svgIcons/star-plus.svg">
+                     <img src="images/svgIcons/eye-plus-outline.svg">
+                     <img src="images/svgIcons/source-merge.svg">
+                  </div>
                </div>
                <div id="projectBox3">
                   <h6>Super Cool Project</h6>
@@ -114,9 +125,11 @@
                      at tempora enim natus magnam, perspiciatis possimus excepturi illum earum veritatis pariatur
                      quia
                      nihil exercitationem repellat.</p>
-                  <img src="images/svgIcons/star-plus.svg">
-                  <img src="images/svgIcons/eye-plus-outline.svg">
-                  <img src="images/svgIcons/source-merge.svg">
+                  <div id="pBoxIcons3">
+                     <img src="images/svgIcons/star-plus.svg">
+                     <img src="images/svgIcons/eye-plus-outline.svg">
+                     <img src="images/svgIcons/source-merge.svg">
+                  </div>
                </div>
                <div id="projectBox4">
                   <h6>Super Cool Project</h6>
@@ -125,9 +138,11 @@
                      at tempora enim natus magnam, perspiciatis possimus excepturi illum earum veritatis pariatur
                      quia
                      nihil exercitationem repellat.</p>
-                  <img src="images/svgIcons/star-plus.svg">
-                  <img src="images/svgIcons/eye-plus-outline.svg">
-                  <img src="images/svgIcons/source-merge.svg">
+                  <div id="pBoxIcons4">
+                     <img src="images/svgIcons/star-plus.svg">
+                     <img src="images/svgIcons/eye-plus-outline.svg">
+                     <img src="images/svgIcons/source-merge.svg">
+                  </div>
                </div>
                <div id="projectBox5">
                   <h6>Super Cool Project</h6>
@@ -136,9 +151,11 @@
                      at tempora enim natus magnam, perspiciatis possimus excepturi illum earum veritatis pariatur
                      quia
                      nihil exercitationem repellat.</p>
-                  <img src="images/svgIcons/star-plus.svg">
-                  <img src="images/svgIcons/eye-plus-outline.svg">
-                  <img src="images/svgIcons/source-merge.svg">
+                  <div id="pBoxIcons5">
+                     <img src="images/svgIcons/star-plus.svg">
+                     <img src="images/svgIcons/eye-plus-outline.svg">
+                     <img src="images/svgIcons/source-merge.svg">
+                  </div>
                </div>
                <div id="projectBox6">
                   <h6>Super Cool Project</h6>
@@ -147,9 +164,11 @@
                      at tempora enim natus magnam, perspiciatis possimus excepturi illum earum veritatis pariatur
                      quia
                      nihil exercitationem repellat.</p>
-                  <img src="images/svgIcons/star-plus.svg">
-                  <img src="images/svgIcons/eye-plus-outline.svg">
-                  <img src="images/svgIcons/source-merge.svg">
+                  <div id="pBoxIcons6">
+                     <img src="images/svgIcons/star-plus.svg">
+                     <img src="images/svgIcons/eye-plus-outline.svg">
+                     <img src="images/svgIcons/source-merge.svg">
+                  </div>
                </div>
             </div>
             <div id="annTrendPanel">
